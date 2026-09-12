@@ -6,7 +6,8 @@
 <meta name="theme-color" content="#1B3A5C">
 <title>TIFAWT — Le savoir qui éclaire votre avenir</title>
 <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.jpeg">
+<link rel="icon" type="image/jpeg" href="favicon.jpeg">
+<link rel="apple-touch-icon" href="favicon.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -85,7 +86,6 @@ p{color:var(--gray)}
 .logo-img{height:44px;width:auto;transition:var(--tr);object-fit:contain;border-radius:6px}
 .site-header.scrolled .logo-img{height:38px}
 
-/* ---------- HEADER ---------- */
 .site-header{position:sticky;top:0;z-index:800;background:rgba(250,247,240,.85);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border-bottom:1px solid transparent;transition:var(--tr)}
 .site-header.scrolled{background:rgba(255,255,255,.96);border-bottom-color:var(--line);box-shadow:0 6px 30px rgba(27,58,92,.08)}
 .header-inner{display:flex;align-items:center;gap:22px;height:80px;transition:height var(--tr)}
@@ -126,7 +126,6 @@ p{color:var(--gray)}
 .mobile-nav .nav-link.active::after{display:none}
 .mobile-nav .btn{margin-top:26px;width:100%}
 
-/* ---------- HERO ---------- */
 .hero{position:relative;min-height:94vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(160deg,#0F2540 0%,var(--navy) 50%,#234B75 100%);color:#fff;padding:120px 0 100px}
 .hero-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
 .hero-pattern{position:absolute;inset:0;opacity:.06;background-image:linear-gradient(45deg,transparent 46%,#fff 46%,#fff 54%,transparent 54%),linear-gradient(-45deg,transparent 46%,#fff 46%,#fff 54%,transparent 54%);background-size:58px 58px;animation:patternShift 60s linear infinite}
@@ -157,7 +156,6 @@ p{color:var(--gray)}
 .float-3{bottom:20px;inset-inline-start:20px;animation-delay:3.6s}
 @keyframes floatY{0%,100%{transform:translateY(0) rotate(-.5deg)}50%{transform:translateY(-15px) rotate(.5deg)}}
 
-/* ---------- SLIDER ---------- */
 .slider-section{position:relative;background:var(--white);overflow:hidden}
 .slider-viewport{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:16/7;background:#0a1c30}
 .slider-track{display:flex;height:100%;transition:transform .8s cubic-bezier(.7,0,.3,1)}
@@ -173,7 +171,6 @@ p{color:var(--gray)}
 .slider-progress{position:absolute;bottom:0;left:0;right:0;height:4px;background:rgba(255,255,255,.12);z-index:10}
 .slider-progress span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--terra));width:0;transition:width .15s linear}
 
-/* ---------- CARDS ---------- */
 .grid{display:grid;gap:26px}
 .grid-2{grid-template-columns:repeat(2,1fr)}
 .grid-3{grid-template-columns:repeat(3,1fr)}
@@ -239,7 +236,6 @@ p{color:var(--gray)}
 .breadcrumb{display:flex;gap:9px;font-size:.82rem;color:rgba(255,255,255,.6);margin-bottom:18px;align-items:center;flex-wrap:wrap}
 .breadcrumb a:hover{color:var(--gold)}
 
-/* ---------- COURSE ---------- */
 .course-hero{background:linear-gradient(150deg,#0F2540,var(--navy));color:#fff;padding:60px 0}
 .course-hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:48px;align-items:center}
 .course-hero h1{font-size:clamp(1.8rem,3.8vw,2.8rem);margin:16px 0;color:#fff}
@@ -269,7 +265,6 @@ p{color:var(--gray)}
 [dir="rtl"] .callout{border-radius:12px 0 0 12px}
 .callout strong{color:var(--navy);display:block;margin-bottom:6px;font-family:var(--font-head)}
 
-/* ---------- BLOG ---------- */
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:26px}
 .blog-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:var(--tr);display:flex;flex-direction:column;cursor:pointer}
 .blog-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
@@ -284,7 +279,6 @@ p{color:var(--gray)}
 .blog-read{color:var(--navy);font-weight:700;font-size:.86rem;display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);transition:var(--tr-fast)}
 .blog-card:hover .blog-read{gap:10px;color:var(--terra)}
 
-/* ---------- ADMIN ---------- */
 .admin-shell{display:grid;grid-template-columns:270px 1fr;min-height:100vh}
 .admin-side{background:linear-gradient(180deg,#0F2540,var(--navy));color:#fff;padding:24px 16px;position:sticky;top:0;height:100vh;overflow-y:auto}
 .admin-brand{display:flex;align-items:center;gap:12px;padding:8px 12px 24px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:20px}
@@ -327,7 +321,6 @@ tr:hover td{background:var(--cream-2)}
 .row-actions button.del:hover{border-color:var(--terra);color:var(--terra);background:rgba(192,84,58,.06)}
 .row-actions svg{width:15px;height:15px}
 
-/* ---------- MODAL ---------- */
 .modal-overlay{position:fixed;inset:0;z-index:1500;background:rgba(15,37,64,.65);backdrop-filter:blur(6px);display:grid;place-items:center;padding:22px;opacity:0;visibility:hidden;transition:var(--tr);overflow-y:auto}
 .modal-overlay.open{opacity:1;visibility:visible}
 .modal{background:#fff;border-radius:var(--radius-lg);padding:32px;width:100%;max-width:620px;max-height:90vh;overflow-y:auto;transform:scale(.92) translateY(20px);transition:var(--tr);box-shadow:var(--shadow-lg);position:relative;margin:auto}
@@ -338,9 +331,6 @@ tr:hover td{background:var(--cream-2)}
 .modal-close:hover{background:var(--cream);color:var(--navy)}
 .modal-close svg{width:20px;height:20px}
 
-/* ============================================================
-   LOGIN PAGE PREMIUM — REDESIGN COMPLET
-   ============================================================ */
 .login-page{
   position:relative;
   min-height:100vh;
@@ -679,20 +669,6 @@ tr:hover td{background:var(--cream-2)}
 .login-back:hover{color:var(--terra);gap:11px}
 .login-back:hover svg{transform:translateX(-3px)}
 
-.login-hint{
-  text-align:center;
-  margin-top:18px;
-  font-size:.78rem;
-  color:var(--gray);
-  background:rgba(212,167,62,.08);
-  border:1px dashed rgba(212,167,62,.3);
-  padding:10px 14px;
-  border-radius:10px;
-  position:relative;
-  z-index:2;
-}
-.login-hint strong{color:var(--navy);font-family:var(--font-head)}
-
 .login-card .form-error{
   display:none;
   background:rgba(192,84,58,.08);
@@ -712,7 +688,6 @@ tr:hover td{background:var(--cream-2)}
 .login-card .form-error svg{width:16px;height:16px;flex-shrink:0}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
 
-/* ---------- TOAST ---------- */
 .toast{position:fixed;bottom:28px;inset-inline-end:28px;z-index:2000;background:var(--navy);color:#fff;padding:16px 22px;border-radius:15px;box-shadow:var(--shadow-lg);font-size:.9rem;font-weight:600;display:flex;align-items:center;gap:12px;transform:translateY(140%);opacity:0;transition:var(--tr);max-width:360px;border:1px solid rgba(212,167,62,.3)}
 .toast.show{transform:translateY(0);opacity:1}
 .toast svg{width:20px;height:20px;color:var(--gold);flex-shrink:0}
@@ -724,7 +699,6 @@ tr:hover td{background:var(--cream-2)}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.4,0,.2,1)}
 .reveal.in{opacity:1;transform:none}
 
-/* ---------- FOOTER ---------- */
 .site-footer{background:linear-gradient(180deg,#0F2540,#0A1B2E);color:rgba(255,255,255,.72);padding:74px 0 30px;position:relative;overflow:hidden}
 .site-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--terra),var(--navy))}
 .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;margin-bottom:52px;position:relative;z-index:2}
@@ -748,7 +722,6 @@ tr:hover td{background:var(--cream-2)}
 .loading-state{text-align:center;padding:60px 20px;color:var(--gray)}
 .loading-state .spinner{width:36px;height:36px;border:3px solid var(--line);border-top-color:var(--navy);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
 
-/* ---------- CHATBOT ---------- */
 .chatbot-toggle{position:fixed;bottom:26px;inset-inline-end:26px;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-2));color:var(--gold);display:grid;place-items:center;box-shadow:0 12px 32px rgba(27,58,92,.35);cursor:pointer;z-index:1800;transition:var(--tr);border:2px solid rgba(212,167,62,.4)}
 .chatbot-toggle:hover{transform:scale(1.08) rotate(-6deg);box-shadow:0 16px 40px rgba(27,58,92,.45)}
 .chatbot-toggle svg{width:28px;height:28px}
@@ -788,7 +761,6 @@ tr:hover td{background:var(--cream-2)}
 .chatbot-quick button{padding:6px 12px;border-radius:999px;border:1px solid var(--line);font-size:.76rem;font-weight:600;color:var(--navy);transition:var(--tr-fast);background:var(--cream-2)}
 .chatbot-quick button:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
 
-/* ---------- RESPONSIVE ---------- */
 @media(max-width:1100px){
   .hero-inner{grid-template-columns:1fr;gap:44px}
   .hero-visual{height:400px;order:-1}
@@ -1140,9 +1112,7 @@ tr:hover td{background:var(--cream-2)}
   <div class="err-wrap"><div><div class="err-code">404</div><h1 data-i18n="err.title">Page introuvable</h1><p data-i18n="err.desc">La page n'existe pas.</p><a class="btn btn-primary mt-4" href="#/home" data-i18n="err.back">Retour</a></div></div>
 </section>
 
-<!-- ============================================================
-     ADMIN LOGIN — NOUVEAU DESIGN PREMIUM
-     ============================================================ -->
+<!-- ADMIN LOGIN -->
 <section class="page hidden" id="page-admin-login">
   <div class="login-page">
     <div class="login-particles">
@@ -1187,10 +1157,6 @@ tr:hover td{background:var(--cream-2)}
           <span data-i18n="admin.login.submit">Se connecter</span>
         </button>
       </form>
-
-      <div class="login-hint">
-        <span data-i18n="admin.login.hint">Accès démo :</span> <strong>admin@tifawt.ma</strong> / <strong>fayssaltifawt</strong>
-      </div>
 
       <div class="login-footer">
         <a href="#/home" class="login-back">
@@ -1316,7 +1282,7 @@ tr:hover td{background:var(--cream-2)}
 <script src="https://js.puter.com/v2/"></script>
 <script>
 /* ============================================================
-   TIFAWT — Frontend + Google Sheets + Chatbot IA + i18n FIXÉ
+   TIFAWT — Frontend + Google Sheets + Chatbot IA
    ============================================================ */
 
 const API_URL = 'https://script.google.com/macros/s/AKfycbxQp9gb5SbfvBOGrHmt88FmD04Pa1QrR888JG76sDB9FGM9u_1BUZUQHELZBZvWcs4X/exec';
@@ -1410,7 +1376,7 @@ const I18N = {
     "search.news":"Rechercher une actualité…","search.matieres":"Rechercher une matière…","search.courses":"Rechercher un cours…","search.blog":"Rechercher un article…",
     "filter.all":"Toutes les catégories","filter.allCat":"Toutes les catégories","filter.allFilieres":"Toutes les filières","filter.allLevels":"Tous les niveaux","filter.allLangs":"Toutes les langues",
     "course.lessons":"Leçons",
-    "admin.login.title":"Connexion administrateur","admin.login.sub":"Accédez au tableau de bord de gestion.","admin.login.email":"Email","admin.login.password":"Mot de passe","admin.login.remember":"Se souvenir de moi","admin.login.submit":"Se connecter","admin.login.error":"Email ou mot de passe incorrect.","admin.login.back":"Retour au site","admin.login.hint":"Accès démo :",
+    "admin.login.title":"Connexion administrateur","admin.login.sub":"Accédez au tableau de bord de gestion.","admin.login.email":"Email","admin.login.password":"Mot de passe","admin.login.remember":"Se souvenir de moi","admin.login.submit":"Se connecter","admin.login.error":"Email ou mot de passe incorrect.","admin.login.back":"Retour au site",
     "admin.nav.overview":"Vue d'ensemble","admin.nav.news":"Nouveautés","admin.nav.blog":"Blog","admin.nav.filieres":"Filières","admin.nav.matieres":"Matières","admin.nav.cours":"Cours","admin.nav.slides":"Slides","admin.nav.settings":"Paramètres",
     "admin.logout":"Déconnexion","admin.welcome":"Bienvenue dans votre espace d'administration.","admin.viewSite":"Voir le site","admin.reload":"Recharger"
   },
@@ -1438,7 +1404,7 @@ const I18N = {
     "search.news":"Search news…","search.matieres":"Search a subject…","search.courses":"Search a course…","search.blog":"Search an article…",
     "filter.all":"All categories","filter.allCat":"All categories","filter.allFilieres":"All fields","filter.allLevels":"All levels","filter.allLangs":"All languages",
     "course.lessons":"Lessons",
-    "admin.login.title":"Administrator login","admin.login.sub":"Access the management dashboard.","admin.login.email":"Email","admin.login.password":"Password","admin.login.remember":"Remember me","admin.login.submit":"Log in","admin.login.error":"Incorrect email or password.","admin.login.back":"Back to site","admin.login.hint":"Demo access:",
+    "admin.login.title":"Administrator login","admin.login.sub":"Access the management dashboard.","admin.login.email":"Email","admin.login.password":"Password","admin.login.remember":"Remember me","admin.login.submit":"Log in","admin.login.error":"Incorrect email or password.","admin.login.back":"Back to site",
     "admin.nav.overview":"Overview","admin.nav.news":"News","admin.nav.blog":"Blog","admin.nav.filieres":"Fields","admin.nav.matieres":"Subjects","admin.nav.cours":"Courses","admin.nav.slides":"Slides","admin.nav.settings":"Settings",
     "admin.logout":"Log out","admin.welcome":"Welcome to your administration area.","admin.viewSite":"View site","admin.reload":"Reload"
   },
@@ -1466,7 +1432,7 @@ const I18N = {
     "search.news":"ابحث عن خبر…","search.matieres":"ابحث عن مادة…","search.courses":"ابحث عن درس…","search.blog":"ابحث عن مقال…",
     "filter.all":"كل الفئات","filter.allCat":"كل الفئات","filter.allFilieres":"كل الشعب","filter.allLevels":"كل المستويات","filter.allLangs":"كل اللغات",
     "course.lessons":"الدروس",
-    "admin.login.title":"دخول المسؤول","admin.login.sub":"الدخول إلى لوحة التحكم.","admin.login.email":"البريد الإلكتروني","admin.login.password":"كلمة المرور","admin.login.remember":"تذكرني","admin.login.submit":"دخول","admin.login.error":"البريد أو كلمة المرور غير صحيحة.","admin.login.back":"العودة إلى الموقع","admin.login.hint":"دخول تجريبي:",
+    "admin.login.title":"دخول المسؤول","admin.login.sub":"الدخول إلى لوحة التحكم.","admin.login.email":"البريد الإلكتروني","admin.login.password":"كلمة المرور","admin.login.remember":"تذكرني","admin.login.submit":"دخول","admin.login.error":"البريد أو كلمة المرور غير صحيحة.","admin.login.back":"العودة إلى الموقع",
     "admin.nav.overview":"نظرة عامة","admin.nav.news":"الجديد","admin.nav.blog":"المدونة","admin.nav.filieres":"الشعب","admin.nav.matieres":"المواد","admin.nav.cours":"الدروس","admin.nav.slides":"الشرائح","admin.nav.settings":"الإعدادات",
     "admin.logout":"خروج","admin.welcome":"مرحبًا بك في مساحة الإدارة.","admin.viewSite":"عرض الموقع","admin.reload":"إعادة تحميل"
   }
@@ -1484,33 +1450,25 @@ const t = (key) => {
   return dict[key] || I18N.fr[key] || key;
 };
 
-/* ============================================================
-   APPLICATION DES TRADUCTIONS (FIXÉ)
-   Appelée à chaque changement de page et de langue
-   ============================================================ */
+/* ---------- I18N ---------- */
 function applyI18n(){
-  // Direction + langue
   document.documentElement.lang = state.lang;
   document.documentElement.dir = state.lang === 'ar' ? 'rtl' : 'ltr';
 
-  // Éléments data-i18n
   $$('[data-i18n]').forEach(el => {
     const k = el.getAttribute('data-i18n');
     const v = t(k);
     if (v && v !== k) el.textContent = v;
   });
 
-  // Placeholders
   $$('[data-i18n-placeholder]').forEach(el => {
     const k = el.getAttribute('data-i18n-placeholder');
     const v = t(k);
     if (v) el.placeholder = v;
   });
 
-  // Menu actif
   $$('.lang-opt').forEach(b => b.classList.toggle('active', b.dataset.lang === state.lang));
 
-  // Indicateur langue
   const flags = {fr:'🇫🇷', en:'🇬🇧', ar:'🇲🇦'};
   const labels = {fr:'FR', en:'EN', ar:'AR'};
   const langFlag = $('#langFlag');
@@ -1518,10 +1476,8 @@ function applyI18n(){
   if (langFlag) langFlag.textContent = flags[state.lang];
   if (langLabel) langLabel.textContent = labels[state.lang];
 
-  // Titre de la page
   document.title = 'TIFAWT — ' + t('nav.home');
 
-  // Police arabe
   if (state.lang === 'ar'){
     document.body.style.fontFamily = 'var(--font-ar)';
   } else {
@@ -1549,8 +1505,13 @@ async function showPage(page){
   $('#burger').classList.remove('open');
   window.scrollTo({top:0, behavior:'instant'});
 
+  // Charger les données publiques
   if (['home','news','blog','filieres','matieres','cours','course'].includes(page)){
     await loadAllData();
+  }
+  // ⚡ FORCER le rechargement pour le dashboard admin à chaque visite
+  if (page === 'admin-dashboard'){
+    await loadAllData(true);
   }
 
   if (page === 'home'){ renderHome(); initHeroCanvas(); initSlider(); animateCounters(); }
@@ -1566,7 +1527,7 @@ async function showPage(page){
     renderAdmin('overview');
   }
 
-  applyI18n();       // ← Application après chaque render
+  applyI18n();
   observeReveal();
 }
 
@@ -1592,7 +1553,6 @@ function initHeader(){
     mobileNav.classList.remove('open'); burger.classList.remove('open');
   }));
 
-  // LANGUE : écouteur direct
   const langWrap = $('#langWrap');
   const langBtn = $('#langBtn');
   langBtn.addEventListener('click', (e) => {
@@ -1607,7 +1567,6 @@ function initHeader(){
       state.lang = b.dataset.lang;
       localStorage.setItem('tifawt_lang', state.lang);
       applyI18n();
-      // Réappliquer le rendu pour les éléments dynamiques
       const p = state.page;
       if (p === 'home') renderHome();
       if (p === 'news') renderNews();
@@ -2020,7 +1979,7 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal
 window.closeModal = closeModal;
 
 /* ============================================================
-   LOGIN — MOT DE PASSE : fayssaltifawt
+   LOGIN
    ============================================================ */
 function initLogin(){
   const form = $('#loginForm');
@@ -2045,7 +2004,6 @@ function initLogin(){
     setTimeout(() => {
       if (email === ADMIN_EMAIL && pass === ADMIN_PASSWORD){
         state.isAdmin = true;
-        if ($('#rememberMe').checked) sessionStorage.setItem('tifawt_admin','1');
         sessionStorage.setItem('tifawt_admin','1');
         toast('Connexion réussie ✅', 'success');
         location.hash = '#/admin/dashboard';
@@ -2263,9 +2221,15 @@ window.handleFormImage = function(input, key){
   };
   reader.readAsDataURL(file);
 };
+
+/* ============================================================
+   LOGOUT — vide le cache DB pour forcer le rechargement
+   ============================================================ */
 window.logout = function(){
   state.isAdmin = false;
   sessionStorage.removeItem('tifawt_admin');
+  // Vider le cache local
+  DB = { courses: [], news: [], blog: [], filieres: [], matieres: [], slides: [] };
   toast('Déconnexion', 'success');
   location.hash = '#/admin/login';
 };
